@@ -1,0 +1,2 @@
+# DjangoJump
+A Django project.
