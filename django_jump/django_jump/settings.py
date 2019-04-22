@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'index',
+    'user',
 ]
 
 MIDDLEWARE = [
@@ -116,5 +118,8 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
-
+# 设置根目录的静态资源文件夹public_static
+# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'public_static'),
+# 设置App（index）的静态资源文件夹index_static
+# os.path.join(BASE_DIR, 'index/index_static'),]
 STATIC_URL = '/static/'
