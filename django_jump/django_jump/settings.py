@@ -57,7 +57,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'music.urls'
+ROOT_URLCONF = 'django_jump.urls'
 
 # 设置模版路径，在每个App里分别创建模版文件夹templates
 TEMPLATES = [
@@ -82,7 +82,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'music.wsgi.application'
+WSGI_APPLICATION = 'django_jump.wsgi.application'
 
 
 # Database
@@ -91,15 +91,13 @@ WSGI_APPLICATION = 'music.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'music_db',
+        'NAME': 'django_jump_music_db',
         'USER':'root',
-        'PASSWORD':'1234',
+        'PASSWORD':'123456',
         'HOST':'127.0.0.1',
         'PORT':'3306',
     }
 }
-
-
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
@@ -139,7 +137,7 @@ AUTH_USER_MODEL = 'user.MyUser'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 # STATIC_ROOT用于项目部署上线的静态资源文件
-STATIC_ROOT = 'e:/music/static'
+STATIC_ROOT = 'd:/src/Python/django-project/DjangoJump/django_jump/static/'
 STATIC_URL = '/static/'
 # STATICFILES_DIRS用于收集admin的静态资源文件
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),]
